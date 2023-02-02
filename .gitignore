@@ -11,3 +11,6 @@ src/dist
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+localhost.pem
+localhost-key.pem

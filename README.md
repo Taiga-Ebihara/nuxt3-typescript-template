@@ -1,10 +1,10 @@
 # Nuxt3-typescript-template
 
 ## :warning: dependencies
-name|version
-:--:|:-----:
-node|16.17.1
-nuxt|3.1.1
+name | version
+:--- | :-----
+node | 16.17.1
+nuxt | 3.1.1
 
 
 ## :gear: setup
@@ -25,9 +25,9 @@ npm run dev
 ```
 
 ## :memo: commands
-```
-npm run dev ... hosting on https://localhost:3000
-npm run build:{mode} ... build for the specific environment
-npm run generate:{mode} ... static build for the specific environment
-npm run check ... typecheck, eslint, and prettier
-```
+command | description
+:------ | :---------
+npm run dev | hosting on https://localhost:3000
+npm run build:{mode} | build for the specific environment
+npm run generate:{mode} | static build for the specific environment
+npm run check | typecheck, eslint, and prettier

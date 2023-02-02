@@ -48,6 +48,6 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
     "pinia": "^2.0.28",
-    "sass": "^1.55.0",
+    "sass": "^1.55.0"
   }
 }
