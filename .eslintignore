@@ -1,0 +1,6 @@
+src/.nuxt
+src/.nitro
+src/.cache
+src/.output
+src/dist
+src/tests

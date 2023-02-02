@@ -1,0 +1,14 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./src/.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "target": "esnext",
+    "module": "esnext",
+    // これは `this` のデータプロパティに対してより厳密な推論を可能にします
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  }
+}

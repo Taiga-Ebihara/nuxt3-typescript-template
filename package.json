@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "NUXT_ENV_MODE=local nuxt dev --https --ssl-cert ./localhost.pem --ssl-key ./localhost-key.pem",
+    "build": "NUXT_ENV_MODE=${npm_config_mode} nuxt build",
+    "build:local": "npm run build --mode=local",
+    "build:dev": "npm run build --mode=development",
+    "build:staging": "npm run build --mode=staging",
+    "build:prod": "npm run build --mode=production",
+    "generate": "NUXT_ENV_MODE=${npm_config_mode} nuxt generate",
+    "generate:local": "npm run generate --mode=local",
+    "generate:dev": "npm run generate --mode=development",
+    "generate:staging": "npm run generate --mode=staging",
+    "generate:prod": "npm run generate --mode=production",
+    "check": "npm run typecheck && npm run eslint && npm run prettier",
+    "typecheck": "npx nuxi typecheck",
+    "eslint": "npx eslint --fix './src/**/*.{vue,js,ts,jsx,tsx}'",
+    "prettier": "npx prettier --write './src/**/*.{vue,js,ts,jsx,tsx}'",
+    "prebuild": "npm run check",
+    "pregenerate": "npm run check"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.26.1",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-vue": "^9.5.1",
+    "msw": "^0.47.4",
+    "nuxt": "^3.1.1",
+    "playwright-watch": "^1.3.23",
+    "postcss": "^8.4.20",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.8.4",
+    "vite-plugin-vue-type-imports": "^0.2.4",
+    "vuex": "^4.0.2"
+  },
+  "msw": {
+    "workerDirectory": "src/public"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
+    "pinia": "^2.0.28",
+    "sass": "^1.55.0",
+  }
+}

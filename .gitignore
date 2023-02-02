@@ -1,0 +1,13 @@
+node_modules
+*.log*
+.env
+env.local.js
+
+src/.nuxt
+src/.nitro
+src/.cache
+src/.output
+src/dist
+/test-results/
+/playwright-report/
+/playwright/.cache/
